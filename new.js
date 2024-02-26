@@ -64,6 +64,7 @@ async function submitbooking(e) {
   var service = getElementVal('service');
   var date = getElementVal('date');
   var time = getElementVal('time');
+  var number = getElementVal('number');
 
   var bookingTime = new Date(date + 'T' + time);
 
@@ -87,7 +88,7 @@ async function submitbooking(e) {
       return;
   }
 
-  savedBookings(name, service, date, time);
+  savedBookings(name, service, date, time, number);
 
   document.querySelector('.alert').style.display = 'block';
 
@@ -107,14 +108,15 @@ function getBookingsCountForDay(selectedDate) {
   return Object.values(existingBookings).filter(existingBooking => existingBooking.date === selectedDate).length;
 }
 
-function savedBookings(name, service, date, time) {
+function savedBookings(name, service, date, time, number) {
   var newbookingForm = bookingFormDB.push();
 
   newbookingForm.set({
       name: name,
       service: service,
       date: date,
-      time: time
+      time: time,
+      number: number,
   });
 }
 
@@ -134,6 +136,7 @@ const displayCompletelyBookedDays = () => {
   bookedDays.forEach((count, dayIndex) => {
       if (count >= 4) {
           console.log(`Day ${dayIndex} is completely booked.`);
+          alert('Day is fully booked. Please pick another.')
       }
   });
 };
