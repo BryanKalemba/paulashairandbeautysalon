@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE edge">
     <meta name="viewport" content="width-device-width, initial-scale-1.0">
-    <title>Paula's Hair and Beauty Salon</title>
-    <link rel="stylesheet" href="idea.css">
+    <title>Contact | Paula's Hair and Beauty Salon</title>
+    <link rel="stylesheet" href="styless.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -35,32 +35,42 @@
     
     <section class="sec-3 show-animate">
         <h1 class="animate">Contact Information</h1>
-        <p class="animate">Scroll down to find out how you can contact us!.</p>
+        <p class="animate">Get in contact with our salon!</p>
     </section>
 
     <section class="sec-3 show-animate">
-        <table>
-            <tr>
-                <th class="animate">Paula</th>
-                <th class="animate">Dulce</th>
-                <th class="animate">Malu</th>
-            </tr>
-            <tr>
-                <td class="animate">07869562925</td>
-                <td class="animate">07367936163</td>
-                <td class="animate">Number</td>
-            </tr>
-            <tr>
-                <td class="animate">Paulasunisex.salon@yahoo.com</td>
-                <td class="animate">augusto.margarida2712@yahoo.com</td>
-                <td class="animate">Email</td>
-            </tr>
-            
-        </table>
+        <h1 class="animate">Email and Phone number</h1>
+        <p class="animate">07869562925</p>
+        <p class="animate">Paulasunisex.salon@yahoo.com</p>
     </section>
 
+
+    <section class="sec-3 show-animate">
+        <div class="containter animate">
+            <h1 class="animate">Send us a Message!</h1>
+            <form action="" id="messagingForm" class="animate">
+              <div class="alert">Thank you for reaching out! <br>We will be in touch shortly.</div>
+              
+              <input type="text" id="name" placeholder="Your Name. . . ." required class="animate">
+        
+              <input type="text" id="email" placeholder="Email. . . ." required class="animate">
+        
+              <input type="tel" type="number" id="number" placeholder="Phone Number. . . ." required class="animate">
+        
+              <label for="Message" class="animate">Leave us a message:</label>
+              <input type="text" id="message" required class="message" class="animate">
+        
+              <button class="Message" type="submit">Send Message</button>
+              
+              <div id="messagingContainer"></div>
+            </form>
+          </div>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="script.js"></script>
     <script src="script2.js"></script>
+    <script src="script4.js"></script>
 </body>
 <footer class="footer2">
     <div class="icons">
