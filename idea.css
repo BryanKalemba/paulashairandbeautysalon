@@ -30,7 +30,7 @@ header{
 }
 
 .logo {
-    width: 130px;
+    width: 165px;
     
 }
 
@@ -163,6 +163,7 @@ section.show-animate .animate{
     transform: scale(1);
     animation: TransitionIn 0.85s;
 }
+
 @keyframes TransitionIn {
     from {
        opacity: 0; 
@@ -239,6 +240,7 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    text-decoration: none;
 }
 
 .icons i{
@@ -351,6 +353,9 @@ img{
     }
     a{
         font-size: 40px;
+    }
+    .payment{
+        width: 100;
     }
 }
 @media (max-width: 680px){
