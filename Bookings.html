@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paula's Hair and Beauty Salon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0", shrink-to-fit="no">
+  <title>Booking | Paula's Hair and Beauty Salon</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
 
       <input type="text" id="service" placeholder="Desired Service. . . ." required>
 
-      <input type="tel" id="number" placeholder="Phone Number. . . ." required>
+      <input type="tel" type="number" id="number" placeholder="Phone Number. . . ." required>
 
       <label for="date">Date:</label>
       <input type="date" id="date" required>
@@ -27,6 +27,8 @@
       <button type="submit">Book Appointment</button>
       
       <button><a href="index.html" class="home">Return Home</a></button>
+
+      <div id="bookedDaysContainer"></div>
     </form>
   </div>
 
