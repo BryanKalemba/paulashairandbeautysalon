@@ -65,6 +65,7 @@ async function submitbooking(e) {
   var date = getElementVal('date');
   var time = getElementVal('time');
   var number = getElementVal('number');
+  var email = getElementVal('email');
 
   var bookingTime = new Date(date + 'T' + time);
 
@@ -88,7 +89,7 @@ async function submitbooking(e) {
       return;
   }
 
-  savedBookings(name, service, date, time, number);
+  savedBookings(name, service, date, time, number, email);
 
   document.querySelector('.alert').style.display = 'block';
 
@@ -108,7 +109,7 @@ function getBookingsCountForDay(selectedDate) {
   return Object.values(existingBookings).filter(existingBooking => existingBooking.date === selectedDate).length;
 }
 
-function savedBookings(name, service, date, time, number) {
+function savedBookings(name, service, date, time, number, email) {
   var newbookingForm = bookingFormDB.push();
 
   newbookingForm.set({
@@ -117,6 +118,7 @@ function savedBookings(name, service, date, time, number) {
       date: date,
       time: time,
       number: number,
+      email: email,
   });
 }
 
