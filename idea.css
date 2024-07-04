@@ -194,6 +194,20 @@ section.show-animate .animate{
     transition: .5s;
 }
 
+th{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+td{
+    padding: 5px;
+}
+table{
+    flex-direction: column;
+}
+
 .btnBooking:hover{
     background: pink;
     color: black;
@@ -203,6 +217,17 @@ section.show-animate .animate{
 .btnBooking button:hover::after{
     background: transparent;
     transition: .5s;
+}
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section,
+.right-section {
+    flex: 1;
+    margin: 20px;
 }
 
 th{
@@ -231,7 +256,15 @@ img{
     cursor: pointer;
     display: none;
 }
-
+p{
+    text-decoration: none;
+}
+li{
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+}
 .icons{
     position: relative;
     text-align: center;
@@ -303,6 +336,15 @@ img{
         display: block;
         font-size: 100px;
     }
+    .parent-container{
+        flex-direction: column;
+    }
+    .parent-container .images{
+        width: 1000px;
+    }
+    p{
+        font-size: 40px;
+    }
     .navigation{
         position: absolute;
         top: 100%;
@@ -356,6 +398,21 @@ img{
     }
     .payment{
         width: 100;
+    }
+    table{
+        align-items: center;
+        justify-content: center;
+    }
+    th{
+        width: 400px;
+        font-size: 30px;
+    }
+    h1{
+        align-items: center;
+        justify-content: center;
+    }
+    li{
+        font-size: 27px;
     }
 }
 @media (max-width: 680px){
