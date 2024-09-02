@@ -70,17 +70,17 @@ async function submitbooking(e) {
   var bookingTime = new Date(date + 'T' + time);
 
   if (bookingTime.getHours() < 10 || bookingTime.getHours() >= 18) {
-      alert('Bookings are only available between 9am and 6pm.');
+      alert('Bookings are only available between 10am and 6pm.');
       return;
   }
 
   if (bookingTime.getDay() === 0 || bookingTime.getDay() === 1) {
-      alert('Cannot book appointments on Monday or Sunday.');
+      alert('Sorry, but you cannot book appointments on Monday or Sunday.');
       return;
   }
 
   if (await isWithinTwoHoursOfAnotherBooking(bookingTime)) {
-      alert('Bookings must be at least two hours apart from other customers.');
+      alert('Sorry, but your booking must be at least two hours apart from other customers. Please select another time.');
       return;
   }
 
