@@ -69,7 +69,7 @@ async function submitbooking(e) {
 
   var bookingTime = new Date(date + 'T' + time);
 
-  if (bookingTime.getHours() < 9 || bookingTime.getHours() >= 18) {
+  if (bookingTime.getHours() < 10 || bookingTime.getHours() >= 18) {
       alert('Bookings are only available between 9am and 6pm.');
       return;
   }
