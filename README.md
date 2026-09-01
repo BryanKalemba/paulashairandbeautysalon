@@ -20,6 +20,8 @@ The original site was a personal, voluntary project built two years earlier for 
 - Scroll-reveal animations and a mobile nav drawer, both vanilla JS, no dependencies
 - Responsive layout, tested down to 390px width
 - Open Graph and Twitter Card meta tags on every page, with a custom preview image
+- Canonical tags, `robots.txt`, `sitemap.xml`, and `llms.txt` for search engines and AI crawlers
+- `HairSalon` structured data (JSON-LD) on every page — name, address, hours, phone, and social links, for local search and rich results
 - Plain-English privacy policy page covering what the booking/contact forms collect and where it goes
 
 ## Tech stack
@@ -38,6 +40,11 @@ Vanilla HTML, CSS, and JavaScript — no framework, no build tools, no package m
 ├── privacy.html          Privacy policy
 ├── contact.html          Contact form
 ├── booking.html          Booking form
+├── 404.html               Custom not-found page (GitHub Pages picks this up automatically)
+├── robots.txt             Crawler rules
+├── sitemap.xml            Page list for search engines
+├── llms.txt                Site summary for AI crawlers/assistants
+├── favicon.ico            Root-level favicon (browsers check this path by convention)
 ├── css/
 │   └── style.css         Design system: colours, type, components
 ├── js/
