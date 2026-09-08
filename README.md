@@ -22,7 +22,10 @@ The original site was a personal, voluntary project built two years earlier for 
 - Open Graph and Twitter Card meta tags on every page, with a custom preview image
 - Canonical tags, `robots.txt`, `sitemap.xml`, and `llms.txt` for search engines and AI crawlers
 - `HairSalon` structured data (JSON-LD) on every page — name, address, hours, phone, and social links, for local search and rich results
-- Plain-English privacy policy page covering what the booking/contact forms collect and where it goes
+- Plain-English privacy policy page covering what the booking/contact forms collect and where it goes, including a plain statement that the site sets no cookies
+- Required consent checkbox on both forms, linking to the privacy policy
+- Cancellation/deposit terms on the Terms page
+- All text colours checked against WCAG AA contrast requirements; full keyboard navigation support with visible focus states
 
 ## Tech stack
 
@@ -80,3 +83,5 @@ Both forms POST to the same Formspree endpoint, distinguished by a hidden `_subj
 ## Author
 
 Built by [Bryan Kalemba](https://bryankalemba.com) for Paula's Hair & Beauty Salon.
+
+See [CHANGELOG.md](CHANGELOG.md) for a full history of changes made during the redesign.
